@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>tvim.pro</title>
+
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/favicon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/favicon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/favicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/favicon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./img/favicon/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./img/favicon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./img/favicon/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicon/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="./img/favicon/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="./img/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="./img/favicon/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="./img/favicon/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="./img/favicon/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="./img/favicon/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="./img/favicon/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="./img/favicon/mstile-310x310.png" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container container_small header-container">
+                    <div class="menu-wrapper">
+                        <img src="./img/prev.svg" alt="1" class="menu-arrow menu-prev" />
+                        <div class="menu">
+                            <div class="menu-item"></div>
+                            <div class="menu-item active"></div>
+                            <div class="menu-item inactive"></div>
+                            <div class="menu-item"></div>
+                        </div>
+                        <img src="./img/next.svg" alt="1" class="menu-arrow menu-next" />
+                    </div>
+                    <a href="/" class="logo">tvim.<span>pro</span></a>
+                </div>
+            </header>
+            <div class="tab active actualTab index">
+                <div class="container container_small">
+                    <!-- <div class="key fadeUp">
+                        <div class="key-title">Введите ключ доступа</div>
+                        <form class="key-form">
+                            <input type="text" class="key-input" />
+                            <input type="submit" class="key-submit hidden" value="" />
+                            <img src="./img/cross.svg" alt="cross" class="key-cross hidden" />
+                        </form>
+                        <div class="key-caption">Ключ доступа обновляется каждые 24 часа</div>
+                    </div> -->
+                    <div class="title fadeUp delay">
+                        <span>Tvim.pro</span> - это уникальная платформа на рынке СНГ, обеспечивающая пользователя 100% аналитикой и тоговым результатом. Мы даем возможность
+                        анализировать и применять алгоритмы за 20% от вашей прибыли.
+                    </div>
+                    <div class="newVideo">
+                        <div class="newVideo-sizer"></div>
+                        <iframe class="newVideo-video" src="https://www.youtube.com/embed/KpSUJtrK7sA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- <a href="https://www.youtube.com/watch?v=linlz7-Pnvw" data-fancybox class="video">
+                        <div class="video-inner"></div>
+                        <div class="video-layer"></div>
+                        <img src="./img/arrow.svg" alt="arrow" class="video-img" />
+                        <img src="./img/vid1.svg" alt="vid" class="video-border video-border_1" />
+                        <img src="./img/vid2.svg" alt="vid" class="video-border video-border_2" />
+                        <img src="./img/vid3.svg" alt="vid" class="video-border video-border_3" />
+                    </a> -->
+                    <div class="btn mainBtn">Начать работать</div>
+                    <div class="warning">
+                        <img src="./img/warning.svg" alt="warning" class="warning-img" />
+                        <div class="warning-text warning-text_bright"><span>Важно!</span> Перед началом работы на платформе, ознакомьтесь с видеоинструкцией.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab actualTab content">
+                <div class="container container_small">
+                    <div class="warning">
+                        <img src="./img/warning.svg" alt="warning" class="warning-img" />
+                        <div class="warning-text">Перед запуском аналитики убедитесь, что стрелка скорости интернета и скорости наших серверов находится в синем диапазоне</div>
+                    </div>
+                    <div class="speed">
+                        <div class="speed-item">
+                            <div class="speed-item__img-wrapper">
+                                <svg class="speed-item__img" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M116.937 116.937C126.517 107.357 133.041 95.1514 135.684 81.8637C138.327 68.576 136.97 54.8029 131.786 42.2862C126.601 29.7694 117.821 19.0712 106.557 11.5443C95.2918 4.01746 82.048 6.19085e-07 68.5 0C54.952 -6.19085e-07 41.7082 4.01745 30.4434 11.5443C19.1787 19.0712 10.3989 29.7694 5.21425 42.2862C0.02965 54.8029 -1.32688 68.576 1.31621 81.8637C3.95929 95.1514 10.4833 107.357 20.0632 116.937L23.1336 113.866C14.1609 104.894 8.0505 93.462 5.57496 81.0166C3.09942 68.5712 4.36996 55.6712 9.22591 43.9479C14.0819 32.2246 22.3051 22.2045 32.8558 15.1547C43.4065 8.10497 55.8108 4.34219 68.5 4.34219C81.1892 4.34219 93.5935 8.10498 104.144 15.1547C114.695 22.2045 122.918 32.2246 127.774 43.9479C132.63 55.6712 133.901 68.5712 131.425 81.0166C128.949 93.462 122.839 104.894 113.866 113.866L116.937 116.937Z"
+                                        fill="#3A424B"
+                                    />
+                                    <path
+                                        d="M111.573 110.985C119.951 102.491 125.631 91.7096 127.898 79.9963C130.165 68.283 128.918 56.1609 124.314 45.1543C119.71 34.1476 111.955 24.7479 102.023 18.137C92.0918 11.5262 80.4273 7.99933 68.4966 8C56.5659 8.00067 44.9018 11.5288 34.9709 18.1408C25.04 24.7528 17.2857 34.1534 12.6832 45.1605C8.08059 56.1677 6.83521 68.2899 9.10361 80.003C11.372 91.716 17.0529 102.497 25.432 110.99L26.1275 110.304C17.8837 101.948 12.2946 91.3411 10.0628 79.8172C7.83101 68.2933 9.05629 56.3668 13.5845 45.5374C18.1128 34.708 25.7418 25.4592 35.5124 18.954C45.2829 12.4488 56.7587 8.97765 68.4967 8.977C80.2347 8.97634 91.7108 12.4462 101.482 18.9503C111.253 25.4544 118.883 34.7024 123.413 45.5313C127.942 56.3602 129.169 68.2865 126.938 79.8107C124.708 91.3348 119.12 101.942 110.877 110.299L111.573 110.985Z"
+                                        fill="#3A414B"
+                                    />
+                                    <path
+                                        d="M111.573 110.985C119.951 102.491 125.631 91.7096 127.898 79.9963C130.165 68.283 128.918 56.1609 124.314 45.1543C119.71 34.1476 111.955 24.7479 102.023 18.137C92.0918 11.5262 80.4273 7.99933 68.4966 8C56.5659 8.00067 44.9018 11.5288 34.9709 18.1408C25.04 24.7528 17.2857 34.1534 12.6832 45.1605C8.08059 56.1677 6.83521 68.2899 9.10361 80.003C11.372 91.716 17.0529 102.497 25.432 110.99L26.1275 110.304C17.8837 101.948 12.2946 91.3411 10.0628 79.8172C7.83101 68.2933 9.05629 56.3668 13.5845 45.5374C18.1128 34.708 25.7418 25.4592 35.5124 18.954C45.2829 12.4488 56.7587 8.97765 68.4967 8.977C80.2347 8.97634 91.7108 12.4462 101.482 18.9503C111.253 25.4544 118.883 34.7024 123.413 45.5313C127.942 56.3602 129.169 68.2865 126.938 79.8107C124.708 91.3348 119.12 101.942 110.877 110.299L111.573 110.985Z"
+                                        fill="#3A414B"
+                                    />
+                                    <path
+                                        d="M111.573 110.985C117.237 105.242 121.696 98.4247 124.687 90.9333C127.678 83.4419 129.141 75.4281 128.989 67.3631C128.838 59.2981 127.075 51.3449 123.804 43.9712C120.534 36.5975 115.822 29.9522 109.946 24.4263L109.277 25.138C115.058 30.5747 119.694 37.1127 122.911 44.3673C126.129 51.6219 127.863 59.4467 128.012 67.3814C128.162 75.3162 126.723 83.2006 123.78 90.571C120.837 97.9414 116.45 104.649 110.877 110.299L111.573 110.985Z"
+                                        fill="#3A414B"
+                                    />
+                                    <path
+                                        d="M111.573 110.985C117.237 105.242 121.696 98.4247 124.687 90.9333C127.678 83.4419 129.141 75.4281 128.989 67.3631C128.838 59.2981 127.075 51.3449 123.804 43.9712C120.534 36.5975 115.822 29.9522 109.946 24.4263L109.277 25.138C115.058 30.5747 119.694 37.1127 122.911 44.3673C126.129 51.6219 127.863 59.4467 128.012 67.3814C128.162 75.3162 126.723 83.2006 123.78 90.571C120.837 97.9414 116.45 104.649 110.877 110.299L111.573 110.985Z"
+                                        fill="#FF0101"
+                                    />
+                                    <mask id="path-4-inside-1" fill="white">
+                                        <path
+                                            d="M20.0632 116.937C10.4833 107.357 3.9593 95.1514 1.31621 81.8637C-1.32688 68.576 0.0296493 54.8029 5.21425 42.2862C10.3989 29.7694 19.1787 19.0712 30.4434 11.5443C41.7082 4.01745 54.952 -1.61559e-07 68.5 0C82.048 1.61559e-07 95.2918 4.01746 106.557 11.5443C117.821 19.0712 126.601 29.7694 131.786 42.2862C136.97 54.8029 138.327 68.576 135.684 81.8637C133.041 95.1514 126.517 107.357 116.937 116.937L113.785 113.785C122.741 104.828 128.84 93.4169 131.311 80.994C133.783 68.571 132.514 55.6943 127.667 43.9922C122.82 32.29 114.611 22.288 104.08 15.251C93.5482 8.21398 81.1663 4.45798 68.5 4.45798C55.8337 4.45798 43.4518 8.21398 32.9202 15.251C22.3885 22.288 14.1801 32.29 9.33289 43.9922C4.4857 55.6943 3.21745 68.571 5.68853 80.994C8.1596 93.4169 14.259 104.828 23.2155 113.785L20.0632 116.937Z"
+                                        />
+                                    </mask>
+                                    <path
+                                        d="M20.0632 116.937C10.4833 107.357 3.9593 95.1514 1.31621 81.8637C-1.32688 68.576 0.0296493 54.8029 5.21425 42.2862C10.3989 29.7694 19.1787 19.0712 30.4434 11.5443C41.7082 4.01745 54.952 -1.61559e-07 68.5 0C82.048 1.61559e-07 95.2918 4.01746 106.557 11.5443C117.821 19.0712 126.601 29.7694 131.786 42.2862C136.97 54.8029 138.327 68.576 135.684 81.8637C133.041 95.1514 126.517 107.357 116.937 116.937L113.785 113.785C122.741 104.828 128.84 93.4169 131.311 80.994C133.783 68.571 132.514 55.6943 127.667 43.9922C122.82 32.29 114.611 22.288 104.08 15.251C93.5482 8.21398 81.1663 4.45798 68.5 4.45798C55.8337 4.45798 43.4518 8.21398 32.9202 15.251C22.3885 22.288 14.1801 32.29 9.33289 43.9922C4.4857 55.6943 3.21745 68.571 5.68853 80.994C8.1596 93.4169 14.259 104.828 23.2155 113.785L20.0632 116.937Z"
+                                        stroke="url(#paint0_linear)"
+                                        stroke-width="12"
+                                        mask="url(#path-4-inside-1)"
+                                        class="speed-item__line speed-item__line_fast"
+                                    />
+                                    <line x1="129" y1="69" x2="122" y2="69" stroke="#FF0101" stroke-width="2" />
+                                    <line x1="15" y1="69" x2="8" y2="69" stroke="#3A414B" stroke-width="2" />
+                                    <line x1="68" y1="15" x2="68" y2="8" stroke="#3A414B" stroke-width="2" />
+                                    <line x1="25.0126" y1="110.073" x2="29.9624" y2="105.123" stroke="#3A414B" stroke-width="2" />
+                                    <line x1="105.293" y1="30.2427" x2="110.243" y2="25.2929" stroke="#FF0101" stroke-width="2" />
+                                    <line x1="26.7071" y1="25.2929" x2="31.6569" y2="30.2426" stroke="#3A414B" stroke-width="2" />
+                                    <line x1="107.037" y1="105.123" x2="111.987" y2="110.073" stroke="#FF0101" stroke-width="2" />
+                                    <line x1="38.8568" y1="16.1583" x2="40.8568" y2="19.6224" stroke="#3A414B" />
+                                    <line x1="53.0289" y1="10.3796" x2="54.0641" y2="14.2433" stroke="#3A414B" />
+                                    <line x1="83.3755" y1="10.547" x2="82.3403" y2="14.4107" stroke="#3A414B" />
+                                    <line x1="97.4828" y1="16.4816" x2="95.4828" y2="19.9457" stroke="#3A414B" />
+                                    <line x1="119.714" y1="37.433" x2="116.25" y2="39.433" stroke="#DA0D0F" />
+                                    <line x1="19.7139" y1="95.433" x2="16.2498" y2="97.433" stroke="#3A414B" />
+                                    <line x1="125.993" y1="51.483" x2="122.129" y2="52.5182" stroke="#FF0101" />
+                                    <line x1="13.9927" y1="82.483" x2="10.129" y2="83.5182" stroke="#3A414B" />
+                                    <line x1="126.734" y1="83.5182" x2="122.87" y2="82.483" stroke="#FF0101" />
+                                    <line x1="14.9507" y1="53.6066" x2="11.087" y2="52.5713" stroke="#3A414B" />
+                                    <line x1="120.214" y1="98.433" x2="116.75" y2="96.433" stroke="#FF0101" />
+                                    <line x1="20.2441" y1="40.3643" x2="16.78" y2="38.3643" stroke="#3A414B" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear" x1="68.5" y1="0" x2="68.5" y2="137" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#52BBFF" />
+                                            <stop offset="1" stop-color="#100F2E" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <img src="./img/speed_arrow.svg" alt="1" class="speed-item__img-arrow speed-item__img-arrow_fast" />
+                            </div>
+                            <div class="speed-item__text">
+                                Скорость вашего
+                                <b>интернета</b>
+                            </div>
+                        </div>
+                        <div class="speed-item">
+                            <div class="speed-item__img-wrapper">
+                                <svg class="speed-item__img" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M116.937 116.937C126.517 107.357 133.041 95.1514 135.684 81.8637C138.327 68.576 136.97 54.8029 131.786 42.2862C126.601 29.7694 117.821 19.0712 106.557 11.5443C95.2918 4.01746 82.048 6.19085e-07 68.5 0C54.952 -6.19085e-07 41.7082 4.01745 30.4434 11.5443C19.1787 19.0712 10.3989 29.7694 5.21425 42.2862C0.02965 54.8029 -1.32688 68.576 1.31621 81.8637C3.95929 95.1514 10.4833 107.357 20.0632 116.937L23.1336 113.866C14.1609 104.894 8.0505 93.462 5.57496 81.0166C3.09942 68.5712 4.36996 55.6712 9.22591 43.9479C14.0819 32.2246 22.3051 22.2045 32.8558 15.1547C43.4065 8.10497 55.8108 4.34219 68.5 4.34219C81.1892 4.34219 93.5935 8.10498 104.144 15.1547C114.695 22.2045 122.918 32.2246 127.774 43.9479C132.63 55.6712 133.901 68.5712 131.425 81.0166C128.949 93.462 122.839 104.894 113.866 113.866L116.937 116.937Z"
+                                        fill="#3A424B"
+                                    />
+                                    <path
+                                        d="M111.573 110.985C119.951 102.491 125.631 91.7096 127.898 79.9963C130.165 68.283 128.918 56.1609 124.314 45.1543C119.71 34.1476 111.955 24.7479 102.023 18.137C92.0918 11.5262 80.4273 7.99933 68.4966 8C56.5659 8.00067 44.9018 11.5288 34.9709 18.1408C25.04 24.7528 17.2857 34.1534 12.6832 45.1605C8.08059 56.1677 6.83521 68.2899 9.10361 80.003C11.372 91.716 17.0529 102.497 25.432 110.99L26.1275 110.304C17.8837 101.948 12.2946 91.3411 10.0628 79.8172C7.83101 68.2933 9.05629 56.3668 13.5845 45.5374C18.1128 34.708 25.7418 25.4592 35.5124 18.954C45.2829 12.4488 56.7587 8.97765 68.4967 8.977C80.2347 8.97634 91.7108 12.4462 101.482 18.9503C111.253 25.4544 118.883 34.7024 123.413 45.5313C127.942 56.3602 129.169 68.2865 126.938 79.8107C124.708 91.3348 119.12 101.942 110.877 110.299L111.573 110.985Z"
+                                        fill="#3A414B"
+                                    />
+                                    <path
+                                        d="M111.573 110.985C119.951 102.491 125.631 91.7096 127.898 79.9963C130.165 68.283 128.918 56.1609 124.314 45.1543C119.71 34.1476 111.955 24.7479 102.023 18.137C92.0918 11.5262 80.4273 7.99933 68.4966 8C56.5659 8.00067 44.9018 11.5288 34.9709 18.1408C25.04 24.7528 17.2857 34.1534 12.6832 45.1605C8.08059 56.1677 6.83521 68.2899 9.10361 80.003C11.372 91.716 17.0529 102.497 25.432 110.99L26.1275 110.304C17.8837 101.948 12.2946 91.3411 10.0628 79.8172C7.83101 68.2933 9.05629 56.3668 13.5845 45.5374C18.1128 34.708 25.7418 25.4592 35.5124 18.954C45.2829 12.4488 56.7587 8.97765 68.4967 8.977C80.2347 8.97634 91.7108 12.4462 101.482 18.9503C111.253 25.4544 118.883 34.7024 123.413 45.5313C127.942 56.3602 129.169 68.2865 126.938 79.8107C124.708 91.3348 119.12 101.942 110.877 110.299L111.573 110.985Z"
+                                        fill="#3A414B"
+                                    />
+                                    <path
+                                        d="M111.573 110.985C117.237 105.242 121.696 98.4247 124.687 90.9333C127.678 83.4419 129.141 75.4281 128.989 67.3631C128.838 59.2981 127.075 51.3449 123.804 43.9712C120.534 36.5975 115.822 29.9522 109.946 24.4263L109.277 25.138C115.058 30.5747 119.694 37.1127 122.911 44.3673C126.129 51.6219 127.863 59.4467 128.012 67.3814C128.162 75.3162 126.723 83.2006 123.78 90.571C120.837 97.9414 116.45 104.649 110.877 110.299L111.573 110.985Z"
+                                        fill="#3A414B"
+                                    />
+                                    <path
+                                        d="M111.573 110.985C117.237 105.242 121.696 98.4247 124.687 90.9333C127.678 83.4419 129.141 75.4281 128.989 67.3631C128.838 59.2981 127.075 51.3449 123.804 43.9712C120.534 36.5975 115.822 29.9522 109.946 24.4263L109.277 25.138C115.058 30.5747 119.694 37.1127 122.911 44.3673C126.129 51.6219 127.863 59.4467 128.012 67.3814C128.162 75.3162 126.723 83.2006 123.78 90.571C120.837 97.9414 116.45 104.649 110.877 110.299L111.573 110.985Z"
+                                        fill="#FF0101"
+                                    />
+                                    <mask id="path-4-inside-1" fill="white">
+                                        <path
+                                            d="M20.0632 116.937C10.4833 107.357 3.9593 95.1514 1.31621 81.8637C-1.32688 68.576 0.0296493 54.8029 5.21425 42.2862C10.3989 29.7694 19.1787 19.0712 30.4434 11.5443C41.7082 4.01745 54.952 -1.61559e-07 68.5 0C82.048 1.61559e-07 95.2918 4.01746 106.557 11.5443C117.821 19.0712 126.601 29.7694 131.786 42.2862C136.97 54.8029 138.327 68.576 135.684 81.8637C133.041 95.1514 126.517 107.357 116.937 116.937L113.785 113.785C122.741 104.828 128.84 93.4169 131.311 80.994C133.783 68.571 132.514 55.6943 127.667 43.9922C122.82 32.29 114.611 22.288 104.08 15.251C93.5482 8.21398 81.1663 4.45798 68.5 4.45798C55.8337 4.45798 43.4518 8.21398 32.9202 15.251C22.3885 22.288 14.1801 32.29 9.33289 43.9922C4.4857 55.6943 3.21745 68.571 5.68853 80.994C8.1596 93.4169 14.259 104.828 23.2155 113.785L20.0632 116.937Z"
+                                        />
+                                    </mask>
+                                    <path
+                                        d="M20.0632 116.937C10.4833 107.357 3.9593 95.1514 1.31621 81.8637C-1.32688 68.576 0.0296493 54.8029 5.21425 42.2862C10.3989 29.7694 19.1787 19.0712 30.4434 11.5443C41.7082 4.01745 54.952 -1.61559e-07 68.5 0C82.048 1.61559e-07 95.2918 4.01746 106.557 11.5443C117.821 19.0712 126.601 29.7694 131.786 42.2862C136.97 54.8029 138.327 68.576 135.684 81.8637C133.041 95.1514 126.517 107.357 116.937 116.937L113.785 113.785C122.741 104.828 128.84 93.4169 131.311 80.994C133.783 68.571 132.514 55.6943 127.667 43.9922C122.82 32.29 114.611 22.288 104.08 15.251C93.5482 8.21398 81.1663 4.45798 68.5 4.45798C55.8337 4.45798 43.4518 8.21398 32.9202 15.251C22.3885 22.288 14.1801 32.29 9.33289 43.9922C4.4857 55.6943 3.21745 68.571 5.68853 80.994C8.1596 93.4169 14.259 104.828 23.2155 113.785L20.0632 116.937Z"
+                                        stroke="url(#paint0_linear)"
+                                        stroke-width="12"
+                                        mask="url(#path-4-inside-1)"
+                                        class="speed-item__line"
+                                    />
+                                    <line x1="129" y1="69" x2="122" y2="69" stroke="#FF0101" stroke-width="2" />
+                                    <line x1="15" y1="69" x2="8" y2="69" stroke="#3A414B" stroke-width="2" />
+                                    <line x1="68" y1="15" x2="68" y2="8" stroke="#3A414B" stroke-width="2" />
+                                    <line x1="25.0126" y1="110.073" x2="29.9624" y2="105.123" stroke="#3A414B" stroke-width="2" />
+                                    <line x1="105.293" y1="30.2427" x2="110.243" y2="25.2929" stroke="#FF0101" stroke-width="2" />
+                                    <line x1="26.7071" y1="25.2929" x2="31.6569" y2="30.2426" stroke="#3A414B" stroke-width="2" />
+                                    <line x1="107.037" y1="105.123" x2="111.987" y2="110.073" stroke="#FF0101" stroke-width="2" />
+                                    <line x1="38.8568" y1="16.1583" x2="40.8568" y2="19.6224" stroke="#3A414B" />
+                                    <line x1="53.0289" y1="10.3796" x2="54.0641" y2="14.2433" stroke="#3A414B" />
+                                    <line x1="83.3755" y1="10.547" x2="82.3403" y2="14.4107" stroke="#3A414B" />
+                                    <line x1="97.4828" y1="16.4816" x2="95.4828" y2="19.9457" stroke="#3A414B" />
+                                    <line x1="119.714" y1="37.433" x2="116.25" y2="39.433" stroke="#DA0D0F" />
+                                    <line x1="19.7139" y1="95.433" x2="16.2498" y2="97.433" stroke="#3A414B" />
+                                    <line x1="125.993" y1="51.483" x2="122.129" y2="52.5182" stroke="#FF0101" />
+                                    <line x1="13.9927" y1="82.483" x2="10.129" y2="83.5182" stroke="#3A414B" />
+                                    <line x1="126.734" y1="83.5182" x2="122.87" y2="82.483" stroke="#FF0101" />
+                                    <line x1="14.9507" y1="53.6066" x2="11.087" y2="52.5713" stroke="#3A414B" />
+                                    <line x1="120.214" y1="98.433" x2="116.75" y2="96.433" stroke="#FF0101" />
+                                    <line x1="20.2441" y1="40.3643" x2="16.78" y2="38.3643" stroke="#3A414B" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear" x1="68.5" y1="0" x2="68.5" y2="137" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#52BBFF" />
+                                            <stop offset="1" stop-color="#100F2E" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <img src="./img/speed_arrow.svg" alt="1" class="speed-item__img-arrow" />
+                            </div>
+                            <div class="speed-item__text">
+                                Скорость работы
+                                <b>Серверов</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timer-wrapper hidden">
+                        <div class="timer-text">До запуска следующей аналитики осталось:</div>
+                        <div class="timer" id="timer">
+                            <div class="timer-minutes">09</div>
+                            :
+                            <div class="timer-seconds">07</div>
+                        </div>
+                    </div>
+                    <div class="timer-buttons fadeUp">
+                        <div class="btn timer-btn">Запустить аналитику</div>
+                        <a href="#" class="btn inactive clickable timer-btn" target="_blank">Перейти на сайт без аналитики</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab animatedTab content">
+                <div class="container">
+                    <div class="warning">
+                        <img src="./img/warning.svg" alt="warning" class="warning-img" />
+                        <div class="warning-text">Дождитесь окончания загрузки аналитики. Не обновляйте страницу.</div>
+                    </div>
+                    <div class="loading">
+                        <div class="pie spinner"></div>
+                        <div class="pie filler"></div>
+                        <div class="mask"></div>
+                        <img src="./img/load1.svg" alt="1" class="loading-layer loading-layer_1" />
+                        <img src="./img/load2.svg" alt="1" class="loading-layer loading-layer_2" />
+                        <img src="./img/load3.svg" alt="1" class="loading-layer loading-layer_3" />
+                        <img src="./img/load4.svg" alt="1" class="loading-layer loading-layer_4" />
+                        <div class="loading-text">Ждите</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab actualTab content">
+                <div class="container container_small">
+                    <div class="percent">
+                        <div class="percent-text" data-number="87">87%</div>
+                        <div class="percent-line">
+                            <div class="percent-line__inner"></div>
+                            <div class="percent-line__circle"></div>
+                        </div>
+                        <div class="percent-desc">
+                            <b>Высокий уровень</b>
+                            проходимости алгоритма
+                        </div>
+                        <!-- <div class="percent-circle">
+                            <img src="./img/perc1.svg" alt="1" class="percent-circle__main" />
+                            <img src="./img/perc2.svg" alt="2" class="percent-circle__layer" />
+                            <div class="percent-circle__text">
+                                Алгоритм
+                                <br />
+                                найден
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="percent-button delay">
+                        <div class="percent-button__text hidden">Делать алгоритм нежелательно</div>
+                        <a href="#" class="btn percent-button__button">Получить алгоритм</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab actualTab alg">
+                <div class="container">
+                    <div class="warning">
+                        <img src="./img/warning.svg" alt="warning" class="warning-img" />
+                        <div class="warning-text">Скопируйте выбранный вами алгоритм и перейдите на сайт для его выполнения</div>
+                    </div>
+                    <div class="alg-list">
+                        <div class="alg-item fadeUp">
+                            <div class="alg-item__top">Депозит для выполнения алгоритма - 970 ₽</div>
+                            <div class="alg-item__main">
+                                <b>Игра «Rise Of Horus»</b>
+                                <div><b>Ставка - 100 ₽</b> (крутим 3 раза)</div>
+                                <div><b>Ставка - 30 ₽</b> (крутим 1 раза)</div>
+                                <div><b>Ставка - 75 ₽</b> (крутим 2 раза)</div>
+                                <div><b>Ставка - 200 ₽</b> (крутим 2 раза)</div>
+                            </div>
+                            <div class="alg-item__bottom">Выигрыш от 4 000 до 5 000 ₽</div>
+                        </div>
+                        <div class="alg-item fadeUp delay">
+                            <div class="alg-item__top">Депозит для выполнения алгоритма - 970 ₽</div>
+                            <div class="alg-item__main">
+                                <b>Игра «Rise Of Horus»</b>
+                                <div><b>Ставка - 100 ₽</b> (крутим 3 раза)</div>
+                                <div><b>Ставка - 30 ₽</b> (крутим 1 раза)</div>
+                                <div><b>Ставка - 75 ₽</b> (крутим 2 раза)</div>
+                                <div><b>Ставка - 200 ₽</b> (крутим 2 раза)</div>
+                            </div>
+                            <div class="alg-item__bottom">Выигрыш от 4 000 до 5 000 ₽</div>
+                        </div>
+                        <div class="alg-item fadeUp delay2">
+                            <div class="alg-item__top alg-item__top_gray">Депозит для выполнения алгоритма - 970 ₽</div>
+                            <div class="alg-item__main">
+                                <b>VIP алгоритм</b>
+                                <div>недоступен</div>
+                            </div>
+                            <div class="alg-item__bottom">Выигрыш от 4 000 до 5 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="alg-btn__wrapper">
+                        <a href="#" class="btn alg-btn" target="_blank">Перейти на сайт</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mainAnimation">
+                <div class="mainAnimation-circle">
+                    <img src="./img/a9.svg" alt="1" class="mainAnimation-circle__item mainAnimation-circle_1" />
+                    <img src="./img/a10.svg" alt="1" class="mainAnimation-circle__item mainAnimation-circle_2" />
+                    <img src="./img/a11.svg" alt="1" class="mainAnimation-circle__item mainAnimation-circle__circle" />
+                </div>
+                <img src="./img/a1.svg" alt="1" class="mainAnimation-img mainAnimation-img_1 mainAnimation-img__star mainAnimation-img__star_1" />
+                <img src="./img/a2.svg" alt="1" class="mainAnimation-img mainAnimation-img_2 mainAnimation-img__turtle mainAnimation-img__turtle_1" />
+                <img src="./img/a6.svg" alt="1" class="mainAnimation-img mainAnimation-img_6 mainAnimation-img__turtle mainAnimation-img__turtle_2" />
+                <img src="./img/a3.svg" alt="1" class="mainAnimation-img mainAnimation-img_3 mainAnimation-img__star mainAnimation-img__star_2" />
+                <img src="./img/a4.svg" alt="1" class="mainAnimation-img mainAnimation-img_4 mainAnimation-img__star mainAnimation-img__star_3" />
+                <img src="./img/a5.svg" alt="1" class="mainAnimation-img mainAnimation-img_5 mainAnimation-img__star mainAnimation-img__star_4" />
+                <img src="./img/a7.svg" alt="1" class="mainAnimation-img mainAnimation-img_7 mainAnimation-img__star mainAnimation-img__star_5" />
+                <img src="./img/a8.svg" alt="1" class="mainAnimation-img mainAnimation-img_8 mainAnimation-img__star mainAnimation-img__star_6" />
+                <img src="./img/a8.svg" alt="1" class="mainAnimation-img mainAnimation-img_9 mainAnimation-img__star mainAnimation-img__star_7" />
+                <img src="./img/a8.svg" alt="1" class="mainAnimation-img mainAnimation-img_10 mainAnimation-img__star mainAnimation-img__star_8" />
+                <img src="./img/a8.svg" alt="1" class="mainAnimation-img mainAnimation-img_11 mainAnimation-img__star mainAnimation-img__star_9" />
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+@mixin font-face($name, $typeface, $weight) {
+    @font-face {
+        src: local("#{$name}-#{$typeface}"), local("#{$name} #{$typeface}");
+        src:
+            url("../fonts/#{$name}-#{$typeface}.woff2") format("woff2"),
+            url("../fonts/#{$name}-#{$typeface}.eot?#iefix") format("embedded-opentype"),
+            url("../fonts/#{$name}-#{$typeface}.woff") format("woff"),
+            url("../fonts/#{$name}-#{$typeface}.ttf") format("truetype");
+        font-family: "#{$name}";
+        font-weight: #{$weight};
+        font-style: normal;
+    }
+}
+
+@include font-face(Montserrat, Light, 300);
+@include font-face(Montserrat, Regular, 400);
+@include font-face(Montserrat, Medium, 500);
+@include font-face(Montserrat, SemiBold, 600);
+@include font-face(Montserrat, Bold, 700);

@@ -1,0 +1,642 @@
+.content {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s opacity, 0.3s visibility;
+    pointer-events: all;
+}
+
+.speed {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        text-align: center;
+
+        b {
+            display: block;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        &__line {
+            stroke-dasharray: 633.5061;
+            stroke-dashoffset: 633.5061;
+            animation-name: speedAnimationLine, speedAnimationLineSlow;
+            animation-duration: 1s, 8s;
+            animation-delay: 0s, 1s;
+            animation-timing-function: linear, linear;
+            animation-iteration-count: 1, infinite;
+            animation-fill-mode: forwards, forwards;
+
+            &_fast {
+                animation-name: speedAnimationLine, speedAnimationLineFast;
+                animation-duration: 1s, 10s;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            max-width: 137px;
+
+            &-wrapper {
+                display: flex;
+                position: relative;
+            }
+
+            &-arrow {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                transform: translate(-50%, -50%) rotate(0deg);
+                animation-name: speedAnimationArrow, speedAnimationArrowSlow;
+                animation-duration: 1s, 8s;
+                animation-delay: 0s, 1s;
+                animation-timing-function: linear, linear;
+                animation-iteration-count: 1, infinite;
+                animation-fill-mode: forwards, forwards;
+
+                &_fast {
+                    animation-name: speedAnimationArrow, speedAnimationArrowFast;
+                    animation-duration: 1s, 10s;
+                }
+            }
+        }
+
+        &:first-child {
+            margin-right: 80px;
+        }
+    }
+}
+
+@keyframes speedAnimationLine {
+    100% {
+        stroke-dashoffset: 383;
+    }
+}
+
+@keyframes speedAnimationArrow {
+    100% {
+        transform: translate(-50%, -50%) rotate(207deg);
+    }
+}
+
+@keyframes rotate_default {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate_reverse {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+@keyframes speedAnimationLineSlow {
+    0% {
+        stroke-dashoffset: 383;
+    }
+
+    5% {
+        stroke-dashoffset: 403;
+    }
+
+    20% {
+        stroke-dashoffset: 393;
+    }
+
+    25% {
+        stroke-dashoffset: 373;
+    }
+
+    30% {
+        stroke-dashoffset: 383;
+    }
+
+    40% {
+        stroke-dashoffset: 393;
+    }
+
+    45% {
+        stroke-dashoffset: 363;
+    }
+
+    50% {
+        stroke-dashoffset: 353;
+    }
+
+    60% {
+        stroke-dashoffset: 373;
+    }
+
+    75% {
+        stroke-dashoffset: 383;
+    }
+
+    80% {
+        stroke-dashoffset: 343;
+    }
+
+    90% {
+        stroke-dashoffset: 373;
+    }
+
+    95% {
+        stroke-dashoffset: 363;
+    }
+
+    100% {
+        stroke-dashoffset: 383;
+    }
+}
+
+@keyframes speedAnimationArrowSlow {
+    0% {
+        transform: translate(-50%, -50%) rotate(208deg);
+    }
+
+    5% {
+        transform: translate(-50%, -50%) rotate(191deg);
+    }
+
+    20% {
+        transform: translate(-50%, -50%) rotate(199deg);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) rotate(216deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(208deg);
+    }
+
+    40% {
+        transform: translate(-50%, -50%) rotate(199deg);
+    }
+
+    45% {
+        transform: translate(-50%, -50%) rotate(224deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(232deg);
+    }
+
+    60% {
+        transform: translate(-50%, -50%) rotate(216deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) rotate(208deg);
+    }
+
+    80% {
+        transform: translate(-50%, -50%) rotate(241deg);
+    }
+
+    90% {
+        transform: translate(-50%, -50%) rotate(216deg);
+    }
+
+    95% {
+        transform: translate(-50%, -50%) rotate(224deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(208deg);
+    }
+}
+
+@keyframes speedAnimationLineFast {
+    0% {
+        stroke-dashoffset: 383;
+    }
+
+    5% {
+        stroke-dashoffset: 363;
+    }
+
+    10% {
+        stroke-dashoffset: 373;
+    }
+
+    20% {
+        stroke-dashoffset: 343;
+    }
+
+    25% {
+        stroke-dashoffset: 393;
+    }
+
+    30% {
+        stroke-dashoffset: 383;
+    }
+
+    40% {
+        stroke-dashoffset: 403;
+    }
+
+    45% {
+        stroke-dashoffset: 398;
+    }
+
+    50% {
+        stroke-dashoffset: 425;
+    }
+
+    60% {
+        stroke-dashoffset: 413;
+    }
+
+    70% {
+        stroke-dashoffset: 406;
+    }
+
+    75% {
+        stroke-dashoffset: 415;
+    }
+
+    80% {
+        stroke-dashoffset: 430;
+    }
+
+    90% {
+        stroke-dashoffset: 407;
+    }
+
+    100% {
+        stroke-dashoffset: 383;
+    }
+}
+
+@keyframes speedAnimationArrowFast {
+    0% {
+        transform: translate(-50%, -50%) rotate(208deg);
+    }
+
+    5% {
+        transform: translate(-50%, -50%) rotate(224deg);
+    }
+
+    10% {
+        transform: translate(-50%, -50%) rotate(216deg);
+    }
+
+    20% {
+        transform: translate(-50%, -50%) rotate(241deg);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) rotate(199deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(208deg);
+    }
+
+    40% {
+        transform: translate(-50%, -50%) rotate(191deg);
+    }
+
+    45% {
+        transform: translate(-50%, -50%) rotate(195deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(173deg);
+    }
+
+    60% {
+        transform: translate(-50%, -50%) rotate(183deg);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) rotate(188deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) rotate(181deg);
+    }
+
+    80% {
+        transform: translate(-50%, -50%) rotate(168deg);
+    }
+
+    90% {
+        transform: translate(-50%, -50%) rotate(188deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(208deg);
+    }
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 36px;
+
+    &-text {
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #7b8297;
+    }
+
+    &-wrapper {
+        margin-bottom: 50px;
+        text-align: center;
+
+        &.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+
+    &-buttons {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-btn {
+        cursor: pointer;
+    }
+}
+
+.percent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    text-align: center;
+
+    &-text {
+        font-weight: 700;
+        font-size: 120px;
+        color: transparent;
+        background: linear-gradient(180deg, #0573f0 0%, #53bcff 100%);
+        background-clip: text;
+    }
+
+    &-line {
+        position: relative;
+        width: 200px;
+        height: 8px;
+        margin-bottom: 50px;
+        border-radius: 30px;
+        background-color: #3a414b;
+
+        &__inner {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #111231 0.96%, #4ebaf9 100%);
+        }
+
+        &__circle {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            box-shadow: 0 0 5px 3px rgba(37, 222, 255, 0.5);
+            background-color: #76caff;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-desc {
+        opacity: 0;
+        transform: translateY(100%);
+
+        b {
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+
+    &-circle {
+        display: flex;
+        position: relative;
+
+        &__text {
+            width: 100%;
+            font-weight: 700;
+            font-size: 36px;
+            text-transform: uppercase;
+            color: transparent;
+            background: linear-gradient(297.5deg, #346c9f 17.45%, #48bffc 75.09%);
+            background-clip: text;
+        }
+
+        &__layer {
+            animation-name: rotate_reverse;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        &__main {
+            animation-name: rotate_default;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        &.hidden {
+            display: none;
+        }
+
+        &__layer,
+        &__text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-main {
+        &.hidden {
+            display: none;
+        }
+    }
+
+    &-button {
+        text-align: center;
+        opacity: 0;
+        transform: translateY(100%);
+
+        &__text {
+            margin-bottom: 15px;
+            font-size: 12px;
+            color: #7b8297;
+
+            &.hidden {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        &__button {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 300px;
+            cursor: pointer;
+
+            &.hidden {
+                display: none;
+            }
+        }
+    }
+
+    &_red {
+        .percent-text {
+            background: linear-gradient(297.5deg, #346c9f 17.45%, #ff0101 75.09%);
+            background-clip: text;
+        }
+
+        .percent-line__inner {
+            background: linear-gradient(90deg, #111231 0.96%, #8e0000 100%);
+        }
+
+        .percent-line__circle {
+            box-shadow: 0 0 5px 3px rgba(255, 44, 44, 0.44);
+            background-color: #ff2c2c;
+        }
+
+        .percent-circle__text {
+            background: linear-gradient(297.5deg, #a41517 17.45%, #ff0101 75.09%);
+            background-clip: text;
+        }
+    }
+}
+
+.fadeUp {
+    animation-name: fadeUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+    &.delay {
+        animation-delay: 0.3s;
+    }
+
+    &.delay2 {
+        animation-delay: 0.6s;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.password {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .content {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .speed-item {
+        font-size: 10px;
+
+        b {
+            font-size: 14px;
+        }
+
+        &:first-child {
+            margin-right: 40px;
+        }
+    }
+
+    .timer {
+        font-size: 24px;
+
+        &-text {
+            font-size: 12px;
+        }
+
+        &-wrapper {
+            margin-bottom: 20px;
+        }
+
+        &-buttons {
+            grid-gap: 25px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .loading {
+        margin-top: 140px;
+    }
+
+    .percent {
+        margin-bottom: 50px;
+
+        &-text {
+            font-size: 96px;
+        }
+
+        &-line {
+            margin-bottom: 30px;
+        }
+
+        &-desc {
+            font-size: 16px;
+        }
+
+        &-circle {
+            &__text {
+                font-size: 24px;
+            }
+
+            &__layer {
+                width: 210px;
+            }
+
+            &__main {
+                width: 230px;
+            }
+        }
+    }
+}

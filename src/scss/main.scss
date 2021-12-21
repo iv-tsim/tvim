@@ -1,0 +1,14 @@
+@import "./general/fonts";
+@import "./general/settings";
+@import "./index/index";
+@import "./alg/alg";
+@import "./content/content";
+
+body {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+}
